@@ -1,0 +1,9 @@
+boto3
+geopandas
+rasterio
+numpy
+pandas
+pyyaml
+python-dotenv
+rioxarray
+dask
