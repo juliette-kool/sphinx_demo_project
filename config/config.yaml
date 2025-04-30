@@ -1,0 +1,24 @@
+s3:
+  bucket: geomatiq-raw-raster
+  raster_key: s3://geomatiq-raw-raster/AFR100/TerraClimate_1994-2024/GRV_TerraClimate_1994-2024_Derived.tif
+paths:
+  shape: data/landscape.gpkg
+
+variables:
+  var_to_index:
+    mean_tmin_coldest_month: 0
+    mean_tmax_warmest_month: 1
+    mean_annual_dry_months: 2
+    mean_relative_humidity: 3
+    mean_annual_temperature: 4
+    mean_annual_precipitation: 5
+  vars_to_check:
+    - mean_tmin_coldest_month
+    - mean_tmax_warmest_month
+    - mean_annual_dry_months
+    - mean_relative_humidity
+    - mean_annual_temperature
+    - mean_annual_precipitation
+  rounding:
+    mean_annual_precipitation: 1
+    mean_annual_temperature: 2
