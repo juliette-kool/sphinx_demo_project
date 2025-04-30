@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="prev" title="src" href="modules.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="src.analyser module" href="src.analyser.html" /><link rel="prev" title="License" href="../license.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
         <title>src package - Sphinx Demo Project v0.1</title>
@@ -222,8 +222,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="modules.html">src</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of src</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">src package</a></li>
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">src package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of src package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="src.analyser.html">src.analyser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src.loader.html">src.loader module</a></li>
 </ul>
 </li>
 </ul>
@@ -268,70 +269,21 @@
         <article role="main" id="furo-main-content">
           <section id="src-package">
 <h1>src package<a class="headerlink" href="#src-package" title="Link to this heading">¶</a></h1>
-<section id="module-analyser">
-<span id="src-analyser-module"></span><h2>src.analyser module<a class="headerlink" href="#module-analyser" title="Link to this heading">¶</a></h2>
-<p>Clips a raster to a shape and computes basic stats for selected bands.</p>
-<dl class="py function">
-<dt class="sig sig-object py" id="analyser.compute_stats_from_s3">
-<span class="sig-prename descclassname"><span class="pre">analyser.</span></span><span class="sig-name descname"><span class="pre">compute_stats_from_s3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s3_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_to_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vars_to_check</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rounding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="../_modules/analyser.html#compute_stats_from_s3"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#analyser.compute_stats_from_s3" title="Link to this definition">¶</a></dt>
-<dd><p>Compute stats for specific bands in an S3-hosted raster clipped to a shape.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>s3_path</strong> (<em>str</em>) -- S3 URI to the GeoTIFF</p></li>
-<li><p><strong>gdf</strong> (<em>GeoDataFrame</em>) -- Shape to clip to</p></li>
-<li><p><strong>var_to_index</strong> (<em>dict</em>) -- Variable name → band index (0-based)</p></li>
-<li><p><strong>vars_to_check</strong> (<em>list</em>) -- Variables to extract</p></li>
-<li><p><strong>rounding</strong> (<em>dict</em>) -- Optional rounding per variable</p></li>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="src.analyser.html">src.analyser module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="src.analyser.html#analyser.compute_stats_from_s3"><code class="docutils literal notranslate"><span class="pre">compute_stats_from_s3()</span></code></a></li>
 </ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Mean, median, min, max for each variable</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>DataFrame</p>
-</dd>
-</dl>
-</dd></dl>
-
-</section>
-<section id="module-loader">
-<span id="src-loader-module"></span><h2>src.loader module<a class="headerlink" href="#module-loader" title="Link to this heading">¶</a></h2>
-<p>Loads project config and vector shape.</p>
-<dl class="py function">
-<dt class="sig sig-object py" id="loader.load_config">
-<span class="sig-prename descclassname"><span class="pre">loader.</span></span><span class="sig-name descname"><span class="pre">load_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference internal" href="../_modules/loader.html#load_config"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loader.load_config" title="Link to this definition">¶</a></dt>
-<dd><p>Load YAML config file.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>path</strong> (<em>str</em>) -- Path to config.yaml</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Parsed configuration</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>dict</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="loader.load_shape">
-<span class="sig-prename descclassname"><span class="pre">loader.</span></span><span class="sig-name descname"><span class="pre">load_shape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">GeoDataFrame</span></span></span><a class="reference internal" href="../_modules/loader.html#load_shape"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loader.load_shape" title="Link to this definition">¶</a></dt>
-<dd><p>Load a vector file (GeoPackage, GeoJSON, etc.).</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>path</strong> (<em>str</em>) -- File path</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Loaded geometry</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>GeoDataFrame</p>
-</dd>
-</dl>
-</dd></dl>
-
+</li>
+<li class="toctree-l1"><a class="reference internal" href="src.loader.html">src.loader module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="src.loader.html#loader.load_config"><code class="docutils literal notranslate"><span class="pre">load_config()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="src.loader.html#loader.load_shape"><code class="docutils literal notranslate"><span class="pre">load_shape()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
 </section>
 </section>
 
@@ -340,15 +292,23 @@
       <footer>
         
         <div class="related-pages">
-          
-          <a class="prev-page" href="modules.html">
+          <a class="next-page" href="src.analyser.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">src.analyser module</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../license.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">src</div>
+                <div class="title">License</div>
                 
               </div>
             </a>
@@ -383,15 +343,7 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">src package</a><ul>
-<li><a class="reference internal" href="#module-analyser">src.analyser module</a><ul>
-<li><a class="reference internal" href="#analyser.compute_stats_from_s3"><code class="docutils literal notranslate"><span class="pre">compute_stats_from_s3()</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#module-loader">src.loader module</a><ul>
-<li><a class="reference internal" href="#loader.load_config"><code class="docutils literal notranslate"><span class="pre">load_config()</span></code></a></li>
-<li><a class="reference internal" href="#loader.load_shape"><code class="docutils literal notranslate"><span class="pre">load_shape()</span></code></a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
 </ul>
 </li>
 </ul>

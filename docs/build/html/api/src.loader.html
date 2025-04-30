@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Troubleshooting" href="troubleshooting.html" /><link rel="prev" title="Getting Started" href="getting_started.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="prev" title="src.analyser module" href="src.analyser.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
-        <title>Using the Tool - Sphinx Demo Project v0.1</title>
+        <title>src.loader module - Sphinx Demo Project v0.1</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
@@ -203,10 +203,10 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Usage</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Using the Tool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using_the_tool.html">Using the Tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/troubleshooting.html">Troubleshooting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Developer Guide</span></p>
 <ul>
@@ -221,10 +221,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
-<ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../api/src.html">src package</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of src package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../api/src.analyser.html">src.analyser module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../api/src.loader.html">src.loader module</a></li>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="src.html">src package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of src package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="src.analyser.html">src.analyser module</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">src.loader module</a></li>
 </ul>
 </li>
 </ul>
@@ -247,7 +247,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/usage/using_the_tool.rst.txt" title="View this page">
+  <a class="muted-link" href="../_sources/api/src.loader.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -267,49 +267,43 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="using-the-tool">
-<h1>Using the Tool<a class="headerlink" href="#using-the-tool" title="Link to this heading">¶</a></h1>
-<p>This section describes how to use the core functionality of the project after setup.</p>
-<section id="typical-workflow">
-<h2>Typical Workflow<a class="headerlink" href="#typical-workflow" title="Link to this heading">¶</a></h2>
-<ol class="arabic">
-<li><p><strong>Load your data</strong>
-Describe how a user should prepare or load data into the tool.</p></li>
-<li><p><strong>Run the main function</strong>
-Explain the primary function or command to execute the tool’s core functionality.</p>
-<p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">src</span><span class="o">.</span><span class="n">main</span> <span class="o">--</span><span class="n">config</span> <span class="n">config</span><span class="o">.</span><span class="n">yaml</span>
-</pre></div>
-</div>
-</li>
-<li><p><strong>Interpret the output</strong>
-Describe what the user should expect in terms of outputs, and where they’ll be stored.</p></li>
-</ol>
-</section>
-<section id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h2>
-<p>If the tool uses a configuration file (e.g. <cite>config.yaml</cite>), describe:</p>
-<ul>
-<li><p>Required and optional parameters</p></li>
-<li><p>File structure</p></li>
-<li><p>Example configuration block</p>
-<p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">input_path</span><span class="p">:</span> <span class="n">data</span><span class="o">/</span><span class="nb">input</span><span class="o">/</span>
-<span class="n">output_path</span><span class="p">:</span> <span class="n">data</span><span class="o">/</span><span class="n">output</span><span class="o">/</span>
-<span class="n">mode</span><span class="p">:</span> <span class="s2">&quot;fast&quot;</span>
-</pre></div>
-</div>
-</li>
-</ul>
-</section>
-<section id="tips">
-<h2>Tips<a class="headerlink" href="#tips" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li><p>Use relative paths when possible.</p></li>
-<li><p>Review logs for errors or warnings.</p></li>
-<li><p>Run with <cite>--debug</cite> flag to get more verbose output.</p></li>
-</ul>
-</section>
+          <section id="module-loader">
+<span id="src-loader-module"></span><h1>src.loader module<a class="headerlink" href="#module-loader" title="Link to this heading">¶</a></h1>
+<p>Loads project config and vector shape.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="loader.load_config">
+<span class="sig-prename descclassname"><span class="pre">loader.</span></span><span class="sig-name descname"><span class="pre">load_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference internal" href="../_modules/loader.html#load_config"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loader.load_config" title="Link to this definition">¶</a></dt>
+<dd><p>Load YAML config file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>str</em>) -- Path to config.yaml</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Parsed configuration</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="loader.load_shape">
+<span class="sig-prename descclassname"><span class="pre">loader.</span></span><span class="sig-name descname"><span class="pre">load_shape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">GeoDataFrame</span></span></span><a class="reference internal" href="../_modules/loader.html#load_shape"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loader.load_shape" title="Link to this definition">¶</a></dt>
+<dd><p>Load a vector file (GeoPackage, GeoJSON, etc.).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>str</em>) -- File path</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Loaded geometry</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>GeoDataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 
         </article>
@@ -317,23 +311,15 @@ Describe what the user should expect in terms of outputs, and where they’ll be
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="troubleshooting.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">Troubleshooting</div>
-              </div>
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="getting_started.html">
+          
+          <a class="prev-page" href="src.analyser.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Getting Started</div>
+                <div class="title">src.analyser module</div>
                 
               </div>
             </a>
@@ -367,10 +353,9 @@ Describe what the user should expect in terms of outputs, and where they’ll be
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Using the Tool</a><ul>
-<li><a class="reference internal" href="#typical-workflow">Typical Workflow</a></li>
-<li><a class="reference internal" href="#configuration">Configuration</a></li>
-<li><a class="reference internal" href="#tips">Tips</a></li>
+<li><a class="reference internal" href="#">src.loader module</a><ul>
+<li><a class="reference internal" href="#loader.load_config"><code class="docutils literal notranslate"><span class="pre">load_config()</span></code></a></li>
+<li><a class="reference internal" href="#loader.load_shape"><code class="docutils literal notranslate"><span class="pre">load_shape()</span></code></a></li>
 </ul>
 </li>
 </ul>

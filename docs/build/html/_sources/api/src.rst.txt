@@ -1,18 +1,16 @@
 src package
 ===========
 
-src.analyser module
--------------------
-
-.. automodule:: analyser
+.. automodule:: src
    :members:
    :show-inheritance:
    :undoc-members:
 
-src.loader module
------------------
+Submodules
+----------
 
-.. automodule:: loader
-   :members:
-   :show-inheritance:
-   :undoc-members:
+.. toctree::
+   :maxdepth: 4
+
+   src.analyser
+   src.loader

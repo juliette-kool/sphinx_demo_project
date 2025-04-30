@@ -34,4 +34,4 @@ Project Title
    :maxdepth: 2
    :caption: API Reference
 
-   api/modules
+   api/src
