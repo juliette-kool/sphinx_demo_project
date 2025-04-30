@@ -7,3 +7,7 @@ pyyaml
 python-dotenv
 rioxarray
 dask
+sphinx>=8.2.0
+myst-parser>=3.0.0
+furo>=2024.08.06
+docutils>=0.17

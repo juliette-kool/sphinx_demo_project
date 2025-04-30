@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bcc1cd9-4f47-4279-9e8e-57a65d54b11f" name="Changes" comment="" />
+    <list default="true" id="5bcc1cd9-4f47-4279-9e8e-57a65d54b11f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/tool_1/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tool_2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tool_2/analyser_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tool_2/loader_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env_template" beforeDir="false" afterPath="$PROJECT_DIR$/.env_template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tool_1/analyser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tool_1/loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_calculator.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,15 +47,17 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/juliettekool/PycharmProjects/sphinx_demo_project/docs/source/api"
+    "last_opened_file_path": "/Users/juliettekool/PycharmProjects/sphinx_demo_project/src/package_2"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/package_2" />
       <recent name="$PROJECT_DIR$/docs/source/api" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/package_1" />
       <recent name="$PROJECT_DIR$/docs/source" />
       <recent name="$PROJECT_DIR$/output" />
       <recent name="$PROJECT_DIR$" />

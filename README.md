@@ -1,8 +1,8 @@
-# Project Title
+## Project Title
 
 Short description of the project and its purpose.
 
-## Overview
+### Overview
 
 This project supports [team or objective] by providing [brief explanation of the output or goal]. It includes:
 
@@ -10,7 +10,7 @@ This project supports [team or objective] by providing [brief explanation of the
 - Analytical or modeling scripts
 - Output such as plots, summaries, or reports
 
-## Folder Structure
+### Folder Structure
 
 ```
 ├── data/             # Input/output data (not versioned)
@@ -24,7 +24,7 @@ This project supports [team or objective] by providing [brief explanation of the
 └── pyproject.toml    # (optional) project metadata
 ```
 
-## Getting Started
+### Getting Started
 
 Clone the repo, create a virtual environment, install dependencies:
 
@@ -36,14 +36,14 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Running Tests
+### Running Tests
 
 To run tests:  
 ```bash
 pytest
 ```
 
-## Documentation
+### Documentation
 
 This project uses [Sphinx](https://www.sphinx-doc.org/) for documentation.
 
@@ -56,7 +56,7 @@ make html
 
 The documentation will be available in `docs/build/html/`.
 
-## How We Write READMEs
+### How We Write READMEs
 
 To ensure all projects are easy to navigate and reuse, we follow these guidelines:
 
@@ -66,7 +66,7 @@ To ensure all projects are easy to navigate and reuse, we follow these guideline
 - Link or reference additional documentation as needed
 - Keep it concise and update when major changes occur
 
-## Contact
+### Contact
 
 Maintainer: [Your Name]  
 Email: your.email@company.com
