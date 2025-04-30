@@ -42,7 +42,6 @@ source_suffix = {
     ".md": "markdown",
 }
 
-
 autodoc_default_options = {
     'members': True,
     'undoc-members': True,

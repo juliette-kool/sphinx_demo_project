@@ -12,9 +12,9 @@ Typical Workflow
 2. **Run the main function**
    Explain the primary function or command to execute the tool’s core functionality.
 
-   Example:
-   ::
-      python -m src.main --config config.yaml
+   Example::
+
+       python -m src.main --config config.yaml
 
 3. **Interpret the output**
    Describe what the user should expect in terms of outputs, and where they’ll be stored.
@@ -28,8 +28,8 @@ If the tool uses a configuration file (e.g. `config.yaml`), describe:
 - File structure
 - Example configuration block
 
-   Example:
-   ::
+  Example::
+
       input_path: data/input/
       output_path: data/output/
       mode: "fast"
