@@ -70,35 +70,3 @@ To ensure all projects are easy to navigate and reuse, we follow these guideline
 
 Maintainer: [Your Name]  
 Email: your.email@company.com
-
-
-```{eval-rst}
-.. toctree::
-   :maxdepth: 1
-   :caption: Usage
-
-   usage/getting_started
-   usage/using_the_tool
-   usage/troubleshooting
-   
-.. toctree::
-   :maxdepth: 1
-   :caption: Developer Guide
-
-   dev/contributing
-   dev/writing_docstrings
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Project Info
-
-   project_overview
-   data_dictionary
-   changelog
-   license
-
-.. toctree::
-   :maxdepth: 2
-   :caption: API Reference
-
-   api/modules
