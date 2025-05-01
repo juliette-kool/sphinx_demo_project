@@ -22,7 +22,21 @@ Typical Workflow
 Configuration
 -------------
 
-If the tool uses a configuration file (e.g. `config.yaml`), describe:
+Before running the tool, ensure you have a `.env` file with your AWS credentials.
+Start by copying the template file and filling in your credentials:
+
+::
+
+    cp .env_template .env
+
+Then open `.env` and replace the placeholders with your actual AWS credentials:
+
+::
+
+    AWS_ACCESS_KEY_ID=your_access_key_id
+    AWS_SECRET_ACCESS_KEY=your_secret_access_key
+
+The tool also uses a configuration file (e.g. `config.yaml`). Describe:
 
 - Required and optional parameters
 - File structure
