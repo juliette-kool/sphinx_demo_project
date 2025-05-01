@@ -54,7 +54,9 @@ language = 'english'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 master_doc = 'index'
 html_theme = 'furo'
-html_static_path = ['_static']
+html_baseurl = "https://juliette-kool.github.io/sphinx_demo_project/"
+html_static_path = ['_static']  # if not already defined
+
 
 # Inject project version manually
 html_context = {
