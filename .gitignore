@@ -1,2 +1,10 @@
 data/
 .env
+
+
+_build/
+build/
+_modules/
+_static/
+_sources/
+*.html
