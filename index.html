@@ -179,7 +179,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -262,7 +262,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -270,43 +270,6 @@
         <article role="main" id="furo-main-content">
           <section id="project-title">
 <h1>Project Title<a class="headerlink" href="#project-title" title="Link to this heading">¶</a></h1>
-<section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
-<p>This project supports [team or objective] by providing [brief explanation of the output or goal]. It includes:</p>
-<ul class="simple">
-<li><p>Data ingestion or preprocessing</p></li>
-<li><p>Analytical or modeling scripts</p></li>
-<li><p>Output such as plots, summaries, or reports</p></li>
-</ul>
-</section>
-<section id="folder-structure">
-<h2>Folder Structure<a class="headerlink" href="#folder-structure" title="Link to this heading">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>├── data/             # Input/output data (not versioned)
-├── notebooks/        # Jupyter notebooks for exploration or analysis
-├── src/              # Python modules for logic, loaders, processing
-├── tests/            # Unit tests
-├── docs/             # Sphinx documentation
-├── .env              # Environment variables (if needed)
-├── README.md         # Project overview
-├── requirements.txt  # Python dependencies
-└── pyproject.toml    # (optional) project metadata
-</pre></div>
-</div>
-</section>
-<section id="getting-started">
-<h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h2>
-<p>Clone the repo, create a virtual environment, install dependencies:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/org/project.git
-<span class="nb">cd</span><span class="w"> </span>project
-python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
-<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
-pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-</pre></div>
-</div>
-</section>
-<section id="id1">
-<h2><a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
-</section>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Usage</span></p>
 <ul>
@@ -375,30 +338,8 @@ pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </s
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">Project Title</a><ul>
-<li><a class="reference internal" href="#overview">Overview</a></li>
-<li><a class="reference internal" href="#folder-structure">Folder Structure</a></li>
-<li><a class="reference internal" href="#getting-started">Getting Started</a></li>
-<li><a class="reference internal" href="#id1"></a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>
