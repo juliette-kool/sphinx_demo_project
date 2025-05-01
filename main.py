@@ -1,5 +1,5 @@
-from src import load_config, load_shape
-from src import compute_stats_from_s3
+from src.loader import load_config, load_shape
+from src.analyser import compute_stats_from_s3
 
 config = load_config("config/config.yaml")
 gdf = load_shape(config["paths"]["shape"])
