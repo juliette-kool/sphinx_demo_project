@@ -64,5 +64,5 @@ html_context = {
 html_theme_options = {
     "sidebar_hide_name": False,  # sidebar shows the project name
     "light_logo": "systemiq_logo.png",
-    "dark_logo": "systemiq_logo_dark.png",
+    "dark_logo": "systemiq_logo_dark.jpg",
 }
