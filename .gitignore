@@ -10,4 +10,17 @@ _sources/
 *.html
 doctrees/
 
-docs/.DS_Store
+
+
+# macOS system files
+.DS_Store
+
+# IDE folders
+.idea/
+
+# Python cache files
+__pycache__/
+*.py[cod].DS_Store
+.idea/
+__pycache__/
+*.pyc
