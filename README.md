@@ -36,13 +36,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Running Tests
-
-To run tests:  
-```bash
-pytest
-```
-
 ### Documentation
 
 This project uses [Sphinx](https://www.sphinx-doc.org/) for documentation.
