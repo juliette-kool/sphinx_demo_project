@@ -9,3 +9,5 @@ _static/
 _sources/
 *.html
 doctrees/
+
+docs/.DS_Store
