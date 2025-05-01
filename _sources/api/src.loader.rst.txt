@@ -1,0 +1,7 @@
+src.loader module
+=================
+
+.. automodule:: src.loader
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+src.analyser module
+===================
+
+.. automodule:: src.analyser
+   :members:
+   :show-inheritance:
+   :undoc-members:
