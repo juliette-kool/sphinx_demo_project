@@ -8,3 +8,4 @@ _modules/
 _static/
 _sources/
 *.html
+doctrees/
