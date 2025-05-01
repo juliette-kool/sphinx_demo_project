@@ -179,7 +179,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -218,7 +218,7 @@
 <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Project Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_directory.html">Data Directory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">Change log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
@@ -262,7 +262,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -270,6 +270,49 @@
         <article role="main" id="furo-main-content">
           <section id="project-overview">
 <h1>Project Overview<a class="headerlink" href="#project-overview" title="Link to this heading">¶</a></h1>
+<section id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">¶</a></h2>
+<p>Briefly describe the goal of the project and the problem it aims to solve.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p>This project assesses climate suitability for agricultural commodities under current and future climate scenarios, supporting strategic decisions in land-use planning and investment.</p>
+</dd>
+</dl>
+</section>
+<section id="scope">
+<h2>Scope<a class="headerlink" href="#scope" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Data ingestion and pre-processing (e.g., Terraclimate, CMIP6)</p></li>
+<li><p>Geospatial analysis using vector and raster layers</p></li>
+<li><p>Modeling of climate suitability over time</p></li>
+<li><p>Generation of maps and dashboards for stakeholder use</p></li>
+</ul>
+</section>
+<section id="stakeholders">
+<h2>Stakeholders<a class="headerlink" href="#stakeholders" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Internal team: Data science, GIS, strategy</p></li>
+<li><p>Client(s): [Insert client name or sector]</p></li>
+<li><p>External partners: [e.g., research institutions, NGOs]</p></li>
+</ul>
+</section>
+<section id="deliverables">
+<h2>Deliverables<a class="headerlink" href="#deliverables" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Processed geospatial datasets</p></li>
+<li><p>Analytical notebooks and models</p></li>
+<li><p>Static maps and/or interactive web maps</p></li>
+<li><p>Documentation (this site)</p></li>
+</ul>
+</section>
+<section id="technologies-used">
+<h2>Technologies Used<a class="headerlink" href="#technologies-used" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Python (GeoPandas, Rasterio, xarray, etc.)</p></li>
+<li><p>PostGIS (for spatial queries)</p></li>
+<li><p>S3 / cloud storage for raster delivery</p></li>
+<li><p>Sphinx (for documentation)</p></li>
+</ul>
+</section>
 </section>
 
         </article>
@@ -315,8 +358,31 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Project Overview</a><ul>
+<li><a class="reference internal" href="#purpose">Purpose</a></li>
+<li><a class="reference internal" href="#scope">Scope</a></li>
+<li><a class="reference internal" href="#stakeholders">Stakeholders</a></li>
+<li><a class="reference internal" href="#deliverables">Deliverables</a></li>
+<li><a class="reference internal" href="#technologies-used">Technologies Used</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

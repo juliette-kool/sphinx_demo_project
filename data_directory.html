@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Change log" href="changelog.html" /><link rel="prev" title="Project Overview" href="project_overview.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Changelog" href="changelog.html" /><link rel="prev" title="Project Overview" href="project_overview.html" />
         <link rel="canonical" href="https://juliette-kool.github.io/sphinx_demo_project/data_directory.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
@@ -179,7 +179,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -218,7 +218,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="project_overview.html">Project Overview</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Data Directory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">Change log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
@@ -262,7 +262,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -270,6 +270,52 @@
         <article role="main" id="furo-main-content">
           <section id="data-directory">
 <h1>Data Directory<a class="headerlink" href="#data-directory" title="Link to this heading">¶</a></h1>
+<p>This section outlines the structure and contents of the project's data directory.</p>
+<section id="directory-structure">
+<h2>Directory Structure<a class="headerlink" href="#directory-structure" title="Link to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>data/
+├── raw/
+│   ├── terraclimate/
+│   │   ├── tmax_2020.nc
+│   │   └── ...
+│   └── cmip6/
+│       ├── SSP585/
+│       │   ├── tasmax_2030.nc
+│       │   ├── tasmax_2050.nc
+│       │   └── ...
+├── interim/
+│   └── harmonized_climate/
+└── processed/
+    ├── suitability_layers/
+    └── dashboards/
+</pre></div>
+</div>
+</section>
+<section id="data-sources">
+<h2>Data Sources<a class="headerlink" href="#data-sources" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Terraclimate</strong>
+[<a class="reference external" href="https://www.climatologylab.org/terraclimate.html](https://www.climatologylab.org/terraclimate.html">https://www.climatologylab.org/terraclimate.html](https://www.climatologylab.org/terraclimate.html</a>)
+Used for current historical baseline (e.g., 2000–2020) of temperature, precipitation, etc.</p></li>
+<li><p><strong>CMIP6 Models</strong>
+Acquired via Copernicus or ESGF data portals. Focused on <cite>SSP585</cite> and <cite>SSP245</cite> scenarios for 2030 and 2050 projections.</p></li>
+</ul>
+</section>
+<section id="storage-access">
+<h2>Storage &amp; Access<a class="headerlink" href="#storage-access" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>All large raster datasets are stored in an AWS S3 bucket for scalable access.</p></li>
+<li><p>Vector data is stored in a shared PostGIS database and accessed programmatically.</p></li>
+</ul>
+</section>
+<section id="file-naming-conventions">
+<h2>File Naming Conventions<a class="headerlink" href="#file-naming-conventions" title="Link to this heading">¶</a></h2>
+<p>Use lowercase, snake_case filenames. Climate data is named like:</p>
+<ul class="simple">
+<li><p><cite>tasmax_ssp585_2030_ACCESS-ESM1-5.nc</cite></p></li>
+<li><p><cite>precipitation_terraclimate_2020.nc</cite></p></li>
+</ul>
+</section>
 </section>
 
         </article>
@@ -282,7 +328,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Change log</div>
+                <div class="title">Changelog</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -315,8 +361,30 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Data Directory</a><ul>
+<li><a class="reference internal" href="#directory-structure">Directory Structure</a></li>
+<li><a class="reference internal" href="#data-sources">Data Sources</a></li>
+<li><a class="reference internal" href="#storage-access">Storage &amp; Access</a></li>
+<li><a class="reference internal" href="#file-naming-conventions">File Naming Conventions</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
